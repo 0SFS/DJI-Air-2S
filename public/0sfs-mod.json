@@ -167,10 +167,8 @@
             "path": "3d_model/HD/dji-air-2s.glb",
             "autoFromMeters": 0,
             "credit": {
-              "artist": "yigeshichen",
-              "note": "Original Sketchfab model; recentered and converted to metres. Local reference file.",
-              "licence": "CC BY-NC 4.0",
-              "sourceUrl": "https://sketchfab.com/3d-models/dji-air-2s-e29628f7c3b64c1daf238fd0a807ad93"
+              "artist": "DJI",
+              "note": "Official DJI 3D model."
             }
           },
           {

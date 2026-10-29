@@ -11,6 +11,6 @@
   },
   "scripts": {
     "validate": "node scripts/validate-mod.mjs",
-    "prepare:hd": "node ../fly/scripts/prepare-aircraft-hd.mjs \"3d_model/HD/source/DJI Air 2S.glb\" public/3d_model/HD/dji-air-2s.glb 0.0005 https://sketchfab.com/3d-models/dji-air-2s-e29628f7c3b64c1daf238fd0a807ad93 3d_model/HD/rotors.json 3d_model/HD/gimbal.json"
+    "prepare:hd": "node ../fly/scripts/prepare-aircraft-hd.mjs \"3d_model/HD/source/DJI Air 2S.glb\" public/3d_model/HD/dji-air-2s.glb 0.0005 \"Official DJI 3D model\" 3d_model/HD/rotors.json 3d_model/HD/gimbal.json"
   }
 }
