@@ -1,0 +1,61 @@
+{
+  "componentTolerance": 0.001,
+  "componentTriangles": {
+    "polySurface25": [
+      4830,
+      2656,
+      2134
+    ]
+  },
+  "stages": [
+    {
+      "axis": "yaw",
+      "center": [
+        0,
+        2.7773,
+        159.907
+      ],
+      "parts": [
+        {
+          "node": "polySurface25",
+          "components": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "axis": "roll",
+      "center": [
+        0,
+        -51.0816,
+        125.9
+      ],
+      "parts": [
+        {
+          "node": "polySurface25",
+          "components": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "axis": "pitch",
+      "center": [
+        0,
+        -51.0816,
+        174.55
+      ],
+      "parts": [
+        {
+          "node": "polySurface25",
+          "components": [
+            0
+          ]
+        },
+        "polySurface66"
+      ]
+    }
+  ]
+}

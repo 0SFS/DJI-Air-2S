@@ -1,0 +1,7 @@
+# HD model
+
+DJI model by yigeshichen. Source: [DJI-Air-2S](https://sketchfab.com/3d-models/dji-air-2s-e29628f7c3b64c1daf238fd0a807ad93). Licence: [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+
+The original download is in `source/` and `textures/`. These local reference files are not part of the repository. `npm run prepare:hd` creates the local runtime GLB in `public/3d_model/HD/`, preserving materials and textures, converting source units to metres (0.0005 m per source unit) and recentering the scene. The Air 2S source has about 604 source units across its motor diagonals; 0.0005 m per unit matches the declared 0.302 m span.
+
+`rotors.json` declares blade groups and motor centres in source coordinates. `gimbal.json` declares separate yaw-arm, roll-yoke and camera-housing pitch joints. The source combines these shells into one mesh, so preparation partitions its disconnected components by triangle indices while retaining all vertex attributes, materials and textures. Component numbers are ordered by descending welded vertex count; expected triangle counts make a changed source fail explicitly. Unassigned components remain attached to their original fixed mount. Only the camera housing and lens follow pitch; the roll yoke follows roll, and the suspension arm follows yaw. Each pivot has its own source-coordinate centre, and preparation preserves the complete rest-world geometry.

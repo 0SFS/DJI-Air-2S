@@ -1,0 +1,16 @@
+{
+  "name": "@0sfs/dji-air-2s",
+  "version": "0.1.0",
+  "private": true,
+  "description": "DJI Air 2S aircraft mod for 0SFS.",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "exports": {
+    "./manifest": "./public/0sfs-mod.json",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "validate": "node scripts/validate-mod.mjs",
+    "prepare:hd": "node ../fly/scripts/prepare-aircraft-hd.mjs \"3d_model/HD/source/DJI Air 2S.glb\" public/3d_model/HD/dji-air-2s.glb 0.0005 https://sketchfab.com/3d-models/dji-air-2s-e29628f7c3b64c1daf238fd0a807ad93 3d_model/HD/rotors.json 3d_model/HD/gimbal.json"
+  }
+}
