@@ -7,3 +7,4 @@ build/
 3d_model/HD/source/
 3d_model/HD/textures/
 public/3d_model/HD/*.glb
+public/aircraft/thumbnails/*.png

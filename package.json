@@ -1,5 +1,5 @@
 {
-  "name": "@0sfs/dji-air-2s",
+  "name": "@0sfs/dji-air2s",
   "version": "0.1.0",
   "private": true,
   "description": "DJI Air 2S aircraft mod for 0SFS.",
@@ -11,6 +11,7 @@
   },
   "scripts": {
     "validate": "node scripts/validate-mod.mjs",
-    "prepare:hd": "node ../fly/scripts/prepare-aircraft-hd.mjs \"3d_model/HD/source/DJI Air 2S.glb\" public/3d_model/HD/dji-air-2s.glb 0.0005 \"Official DJI 3D model\" 3d_model/HD/rotors.json 3d_model/HD/gimbal.json"
+    "prepare:hd": "node ../fly/scripts/prepare-aircraft-hd.mjs \"3d_model/HD/source/DJI Air 2S.glb\" public/3d_model/HD/dji-air2s.glb 0.0005 \"Official DJI 3D model\" 3d_model/HD/rotors.json 3d_model/HD/gimbal.json",
+    "render:thumbnail": "mkdir -p build/blender-tmp && TMPDIR=\"$PWD/build/blender-tmp\" blender --background --factory-startup --disable-autoexec --python ../fly/scripts/render-aircraft-thumbnail.py -- public/3d_model/HD/dji-air2s.glb public/aircraft/thumbnails/dji-air2s.png"
   }
 }
